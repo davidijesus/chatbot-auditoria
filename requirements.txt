@@ -1,0 +1,12 @@
+fastapi==0.115.6
+uvicorn==0.32.1
+pandas==2.2.3
+python-dotenv==1.0.1
+pydantic==2.10.3
+
+faiss-cpu==1.9.0.post1
+openai==1.57.2
+
+tqdm==4.67.1
+
+requests==2.32.3
