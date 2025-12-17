@@ -6,6 +6,8 @@ A ferramenta foi desenvolvida para auxiliar na análise de **compliance**, inves
 
 O foco do projeto não é apenas responder perguntas, mas **justificar cada resposta com evidências rastreáveis**, tornando o sistema auditável e confiável.
 
+O vídeo do projeto pode ser acessado [aqui](https://drive.google.com/file/d/1PDTED6Ac7q48wRYhrdX8bj___Bpbblw5/view?usp=sharing).
+
 ---
 
 ## Visão geral da solução
