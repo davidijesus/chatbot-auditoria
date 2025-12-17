@@ -12,11 +12,6 @@ O vídeo do projeto pode ser acessado [aqui](https://drive.google.com/file/d/1PD
 
 ## Visão geral da solução
 
-O AuditBot foi estruturado como um conjunto de módulos independentes, cada um responsável por um aspecto do problema.  
-Nesta primeira etapa do projeto, foi implementado o **chatbot de consulta à política de compliance**, utilizando a abordagem de *Retrieval-Augmented Generation (RAG)*.
-
-## Visão geral da solução
-
 O AuditBot foi estruturado como um conjunto de módulos independentes, cada um responsável por um aspecto específico do problema. A arquitetura separa claramente **ingestão de dados**, **recuperação de informação**, **lógica de auditoria** e **uso pontual de modelos de linguagem**.
 
 A solução cobre três frentes principais:
