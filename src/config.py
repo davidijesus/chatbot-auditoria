@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 class Settings:
     data_dir: Path = BASE_DIR / "data"
     policy_path: Path = data_dir / "politica_compliance.txt"
-    emails_path: Path = data_dir / "emails_internos.txt"
+    emails_path: Path = data_dir / "emails.txt"
     tx_path: Path = data_dir / "transacoes_bancarias.csv"
 
     # index dirs

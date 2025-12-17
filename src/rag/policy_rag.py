@@ -81,3 +81,25 @@ def query_policy(question: str, k: int = 4) -> dict:
         ]
     }
 
+def retrieve_policy(question: str, k: int = 4) -> list[dict]:
+    _ensure_index()
+    index = faiss.read_index(str(settings.policy_index_dir / "index.faiss"))
+    meta = _load_meta(settings.policy_index_dir)
+
+    q_emb = np.array(embed_texts([question]), dtype="float32")
+    faiss.normalize_L2(q_emb)
+
+    scores, ids = index.search(q_emb, k)
+    out = []
+    for rank, i in enumerate(ids[0]):
+        if i == -1:
+            continue
+        m = meta[i]
+        out.append({
+            "id": m["id"],
+            "source": m["source"],
+            "score": float(scores[0][rank]),
+            "quote": (m["text"][:300].replace("\n", " ") + ("..." if len(m["text"]) > 300 else "")),
+        })
+    return out
+
