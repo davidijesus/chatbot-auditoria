@@ -3,8 +3,6 @@ from typing import Dict, List
 from src.ingest.load_transactions import load_transactions_df
 from src.rag.policy_rag import retrieve_policy
 
-# Regras genéricas (adaptáveis) – funcionam com muitos formatos de extrato
-# Você pode ajustar depois de olhar as colunas do CSV.
 PROHIBITED_KEYWORDS = [
     "arma", "sniper", "munição", "drog", "vitamina", "casino", "aposta",
     "serenity", "incenso", "mágica", "algemas", "houdini", "helicóptero"
